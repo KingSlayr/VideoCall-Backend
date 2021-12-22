@@ -4,7 +4,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://connect-mee.herokuapp.com/",
+		origin: "https://connect-mee.herokuapp.com",
 		methods: [ "GET", "POST" ]
 	}
 })
